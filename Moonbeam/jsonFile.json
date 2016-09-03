@@ -1,0 +1,11 @@
+//for notes see https://www.youtube.com/watch?v=_NfijT6mt6A
+
+{
+    "City" : {
+        "Buffalo" : {
+        "city_slug" : "buffalo",
+        "date" : "Tues 15 Oct 2013 00:00:00 GMT-0800",
+        "value" : "296.6"
+        }
+    }
+}

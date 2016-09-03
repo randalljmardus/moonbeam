@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044055998A5AD888A43330D1 /* Pods_Moonbeam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A806FEED6E7EB6E8E8191B4 /* Pods_Moonbeam.framework */; };
 		152A45CF1D592BA500D8CC23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A45CE1D592BA500D8CC23 /* AppDelegate.swift */; };
-		152A45D11D592BA500D8CC23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A45D01D592BA500D8CC23 /* ViewController.swift */; };
+		152A45D11D592BA500D8CC23 /* indexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A45D01D592BA500D8CC23 /* indexViewController.swift */; };
 		152A45D41D592BA500D8CC23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152A45D21D592BA500D8CC23 /* Main.storyboard */; };
 		152A45D61D592BA500D8CC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152A45D51D592BA500D8CC23 /* Assets.xcassets */; };
-		152A45D91D592BA500D8CC23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152A45D71D592BA500D8CC23 /* LaunchScreen.storyboard */; };
+		152A45E11D592C9F00D8CC23 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A45E01D592C9F00D8CC23 /* searchViewController.swift */; };
+		157660E81D593818005EA01A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157660E71D593818005EA01A /* LaunchScreen.xib */; };
+		15B8E7BC1D7B4CE300A011F7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B8E7BB1D7B4CE300A011F7 /* SwiftyJSON.framework */; };
+		15B8E7C01D7B505300A011F7 /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B8E7BF1D7B505300A011F7 /* jsonFile.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		152A45CB1D592BA500D8CC23 /* Moonbeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonbeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		152A45CE1D592BA500D8CC23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		152A45D01D592BA500D8CC23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		152A45D01D592BA500D8CC23 /* indexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexViewController.swift; sourceTree = "<group>"; };
 		152A45D31D592BA500D8CC23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		152A45D51D592BA500D8CC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		152A45D81D592BA500D8CC23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152A45DA1D592BA500D8CC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152A45E01D592C9F00D8CC23 /* searchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		157660E71D593818005EA01A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		15B8E7BB1D7B4CE300A011F7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		15B8E7BF1D7B505300A011F7 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
+		3A806FEED6E7EB6E8E8191B4 /* Pods_Moonbeam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moonbeam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A65D06643B7D63131019E5B /* Pods-Moonbeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonbeam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moonbeam/Pods-Moonbeam.debug.xcconfig"; sourceTree = "<group>"; };
+		5EFE5E0F0DA30D267C676D67 /* Pods-Moonbeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonbeam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moonbeam/Pods-Moonbeam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B8E7BC1D7B4CE300A011F7 /* SwiftyJSON.framework in Frameworks */,
+				044055998A5AD888A43330D1 /* Pods_Moonbeam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,8 @@
 			children = (
 				152A45CD1D592BA500D8CC23 /* Moonbeam */,
 				152A45CC1D592BA500D8CC23 /* Products */,
+				6818E1B7DF5DB6C2CC4151CF /* Frameworks */,
+				BA998CA8E4AED0CE7FB8BFF8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +69,33 @@
 			isa = PBXGroup;
 			children = (
 				152A45CE1D592BA500D8CC23 /* AppDelegate.swift */,
-				152A45D01D592BA500D8CC23 /* ViewController.swift */,
+				152A45D01D592BA500D8CC23 /* indexViewController.swift */,
+				152A45E01D592C9F00D8CC23 /* searchViewController.swift */,
 				152A45D21D592BA500D8CC23 /* Main.storyboard */,
 				152A45D51D592BA500D8CC23 /* Assets.xcassets */,
-				152A45D71D592BA500D8CC23 /* LaunchScreen.storyboard */,
 				152A45DA1D592BA500D8CC23 /* Info.plist */,
+				157660E71D593818005EA01A /* LaunchScreen.xib */,
+				15B8E7BF1D7B505300A011F7 /* jsonFile.json */,
 			);
 			path = Moonbeam;
+			sourceTree = "<group>";
+		};
+		6818E1B7DF5DB6C2CC4151CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15B8E7BB1D7B4CE300A011F7 /* SwiftyJSON.framework */,
+				3A806FEED6E7EB6E8E8191B4 /* Pods_Moonbeam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA998CA8E4AED0CE7FB8BFF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A65D06643B7D63131019E5B /* Pods-Moonbeam.debug.xcconfig */,
+				5EFE5E0F0DA30D267C676D67 /* Pods-Moonbeam.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 152A45DD1D592BA500D8CC23 /* Build configuration list for PBXNativeTarget "Moonbeam" */;
 			buildPhases = (
+				EF7685E895D73A303FF8BC60 /* [CP] Check Pods Manifest.lock */,
 				152A45C71D592BA500D8CC23 /* Sources */,
 				152A45C81D592BA500D8CC23 /* Frameworks */,
 				152A45C91D592BA500D8CC23 /* Resources */,
+				3FC2125B4F84AAD298ADFA7A /* [CP] Embed Pods Frameworks */,
+				6C2A5B3A386834E152BDB8F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,21 +159,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152A45D91D592BA500D8CC23 /* LaunchScreen.storyboard in Resources */,
+				157660E81D593818005EA01A /* LaunchScreen.xib in Resources */,
 				152A45D61D592BA500D8CC23 /* Assets.xcassets in Resources */,
 				152A45D41D592BA500D8CC23 /* Main.storyboard in Resources */,
+				15B8E7C01D7B505300A011F7 /* jsonFile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FC2125B4F84AAD298ADFA7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moonbeam/Pods-Moonbeam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C2A5B3A386834E152BDB8F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moonbeam/Pods-Moonbeam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7685E895D73A303FF8BC60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		152A45C71D592BA500D8CC23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152A45D11D592BA500D8CC23 /* ViewController.swift in Sources */,
+				152A45D11D592BA500D8CC23 /* indexViewController.swift in Sources */,
 				152A45CF1D592BA500D8CC23 /* AppDelegate.swift in Sources */,
+				152A45E11D592C9F00D8CC23 /* searchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +236,6 @@
 				152A45D31D592BA500D8CC23 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		152A45D71D592BA500D8CC23 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				152A45D81D592BA500D8CC23 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -247,8 +326,13 @@
 		};
 		152A45DE1D592BA500D8CC23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A65D06643B7D63131019E5B /* Pods-Moonbeam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+				);
 				INFOPLIST_FILE = Moonbeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Moonbeam;
@@ -258,8 +342,13 @@
 		};
 		152A45DF1D592BA500D8CC23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFE5E0F0DA30D267C676D67 /* Pods-Moonbeam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+				);
 				INFOPLIST_FILE = Moonbeam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.Moonbeam;
@@ -286,6 +375,7 @@
 				152A45DF1D592BA500D8CC23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

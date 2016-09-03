@@ -1,0 +1,60 @@
+id,slug,name,region
+45,buffalo,"Buffalo, NY",eastern
+46,cleveland,"Cleveland, OH",eastern
+47,detroit,"Detroit, MI",eastern
+49,indianapolis,"Indianapolis, IN",eastern
+50,manchester,"Manchester, NH",eastern
+51,new-york,"New York, NY",eastern
+52,newark,"Newark, NJ",eastern
+55,providence,"Providence, RI",eastern
+57,white-river-j,"White River Junction, VT",eastern
+58,wilmington,"Wilmington, DE",eastern
+16,columbia,"Columbia, SC",southern
+17,huntington,"Huntington, WV",southern
+19,louisville,"Louisville, KY",southern
+20,montgomery,"Montgomery, AL",southern
+21,nashville,"Nashville, TN",southern
+23,san-juan,"San Juan, Puerto Rico",southern
+25,washington,"Washington, DC",southern
+26,winston-salem,"Winston-Salem, NC",southern
+29,boise,"Boise, ID",western
+18,jackson,"Jackson, MS",southern
+3,fargo,"Fargo, ND",central
+8,muskogee,"Muskogee, OK",central
+10,sioux-falls,"Sioux Falls, SD",central
+11,st-louis,"St. Louis, MO",central
+13,waco,"Waco, TX",central
+32,fort-harrison,"Fort Harrison, MT",western
+35,manila,"Manila, Philippines",western
+43,baltimore,"Baltimore, MD",eastern
+44,boston,"Boston, MA",eastern
+1,chicago,"Chicago, IL",central
+39,reno,"Reno, NV",western
+5,lincoln,"Lincoln, NE",central
+6,little-rock,"Little Rock, AR",central
+14,wichita,"Wichita, KS",central
+27,albuquerque,"Albuquerque, NM",western
+9,new-orleans,"New Orleans, LA",central
+28,anchorage,"Anchorage, AK",western
+31,cheyenne,"Cheyenne, WY",western
+34,los-angeles,"Los Angeles, CA",western
+42,seattle,"Seattle, WA",western
+7,milwaukee,"Milwaukee, WI",central
+4,houston,"Houston, TX",central
+12,st-paul,"St. Paul, MN",central
+30,denver,"Denver, CO",western
+41,san-diego,"San Diego, CA",western
+54,pittsburgh,"Pittsburgh, PA",eastern
+61,nation,Nation,nation
+36,oakland,"Oakland, CA",western
+56,togus,"Togus, ME",eastern
+2,des-moines,"Des Moines, IA",central
+22,roanoke,"Roanoke, VA",southern
+38,portland,"Portland, OR",western
+48,hartford,"Hartford, CT",eastern
+40,salt-lake-city,"Salt Lake City, UT",western
+33,honolulu,"Honolulu, HI",western
+37,phoenix,"Phoenix, AZ",western
+15,atlanta,"Atlanta, GA",southern
+24,st-petersburg,"St. Petersburg, FL",southern
+53,philadelphia,"Philadelphia, PA",eastern
