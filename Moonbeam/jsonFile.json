@@ -1,4 +1,5 @@
 //for notes see https://www.youtube.com/watch?v=_NfijT6mt6A
+//make it so it calls the buffalo.json file
 
 {
     "City" : {
@@ -6,6 +7,11 @@
         "city_slug" : "buffalo",
         "date" : "Tues 15 Oct 2013 00:00:00 GMT-0800",
         "value" : "296.6"
+        },
+        "Portland" : {
+            "city_slug" : "portland",
+            "date" : "Tues 15 Oct 2013 00:00:00 GMT-0800",
+            "value" : "250.0"
         }
     }
 }
