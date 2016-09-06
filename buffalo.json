@@ -1,5 +1,5 @@
 {
-    "City" : {
+ "City" : {
         "Entry1" : {
             "city_slug": "buffalo", "field_type_name": "Average Processing Time", "region_slug": "eastern", "value": "296.6", "date": "Tue 15 Oct 2013 00:00:00 GMT-0800", "national_avg": "344.9", "field_type_slug": "average-processing-time", "id": "124369"},
         
@@ -7,8 +7,10 @@
             "city_slug": "buffalo", "field_type_name": "Average Processing Time", "region_slug": "eastern", "value": "302.5", "date": "Mon 07 Oct 2013 00:00:00 GMT-0800", "national_avg": "347.0", "field_type_slug": "average-processing-time", "id": "124059"},
         
         "Entry3" : {
-            "city_slug": "buffalo", "field_type_name": "Average Processing Time", "region_slug": "eastern", "value": "317.1", "date": "Sat 28 Sep 2013 00:00:00 GMT-0800", "national_avg": "378.1", "field_type_slug": "average-processing-time", "id": "123801"},
+            "city_slug": "buffalo", "field_type_name": "Average Processing Time", "region_slug": "eastern", "value": "317.1", "date": "Sat 28 Sep 2013 00:00:00 GMT-0800", "national_avg": "378.1", "field_type_slug": "average-processing-time", "id": "123801"}
     }
 }
+
+//the rest of this buffalo json file is copied in the buffalo.json evernote.
 
 

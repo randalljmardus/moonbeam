@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 
 class indexViewController: UITableViewController {
-
+    
     var numberOfRows = 0
     
     var citiesArray = [String]()
@@ -27,34 +27,36 @@ class indexViewController: UITableViewController {
         
         let path : String = NSBundle.mainBundle().pathForResource("buffalo", ofType: "json") as String!
         let jsonData = NSData(contentsOfFile: path) as NSData!
+        //when you decide to pull from the VA url, change contentsOfFile: path to contentsOfFile: insertVAURLhere)
         let readableJSON = JSON(data: jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
         
-        var City = readableJSON["City", "Entry", "city_slug", "value"]
+        var city = readableJSON["City"]["Entry1"]["city_slug"]
         
         numberOfRows = readableJSON["City"].count
         
-        for i in 1...numberOfRows {
-            var Entry = "Entry"
-            Entry += "\(i)"
-            var CitySlug = readableJSON["City"]["Entry1"]["city_slug"].string as String!
-            var Value = readableJSON["City"]["Entry1"]["value"].string as String!
+        for i in 0...numberOfRows {
+            var city = "City"
+            city += "\(i)"
+            var citySlug = readableJSON["City"]["Entry1"]["city_slug"].string as String!
+            var value = readableJSON["City"]["Entry1"]["values"].string as String!
             
             citiesArray.append("city_slug")
-            valuesArray.append("value")
+            valuesArray.append("values")
         }
         
-        NSLog("\(City)")
-        
+        NSLog("\(city)")
         
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return numberOfRows
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-    
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        
         if citiesArray.count != 0 {
             cell.textLabel?.text = citiesArray[indexPath.row]
         }
