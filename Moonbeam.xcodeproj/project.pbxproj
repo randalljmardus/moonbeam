@@ -15,7 +15,6 @@
 		152A45E11D592C9F00D8CC23 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A45E01D592C9F00D8CC23 /* searchViewController.swift */; };
 		157660E81D593818005EA01A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157660E71D593818005EA01A /* LaunchScreen.xib */; };
 		15B8E7BC1D7B4CE300A011F7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B8E7BB1D7B4CE300A011F7 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		15B8E7C01D7B505300A011F7 /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B8E7BF1D7B505300A011F7 /* jsonFile.json */; };
 		15B8E7C21D7C846100A011F7 /* buffalo.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B8E7C11D7C846100A011F7 /* buffalo.json */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 		152A45E01D592C9F00D8CC23 /* searchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 		157660E71D593818005EA01A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		15B8E7BB1D7B4CE300A011F7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		15B8E7BF1D7B505300A011F7 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
 		15B8E7C11D7C846100A011F7 /* buffalo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buffalo.json; sourceTree = SOURCE_ROOT; };
 		3A806FEED6E7EB6E8E8191B4 /* Pods_Moonbeam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moonbeam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A65D06643B7D63131019E5B /* Pods-Moonbeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonbeam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moonbeam/Pods-Moonbeam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				152A45D51D592BA500D8CC23 /* Assets.xcassets */,
 				152A45DA1D592BA500D8CC23 /* Info.plist */,
 				157660E71D593818005EA01A /* LaunchScreen.xib */,
-				15B8E7BF1D7B505300A011F7 /* jsonFile.json */,
 				15B8E7C11D7C846100A011F7 /* buffalo.json */,
 			);
 			path = Moonbeam;
@@ -166,7 +163,6 @@
 				15B8E7C21D7C846100A011F7 /* buffalo.json in Resources */,
 				152A45D61D592BA500D8CC23 /* Assets.xcassets in Resources */,
 				152A45D41D592BA500D8CC23 /* Main.storyboard in Resources */,
-				15B8E7C01D7B505300A011F7 /* jsonFile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
