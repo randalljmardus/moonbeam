@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class indexViewController: UITableViewController {
     
-    let numberOfRows = 2
+    let numberOfRows = 1
     
     var citiesArray = [String]()
     var valuesArray = [String]()
@@ -37,8 +37,6 @@ class indexViewController: UITableViewController {
        let readableJSON = JSON(data: jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
         
         var city = readableJSON["city"]["city_slug"]["value"]
-        
- //       numberOfRows = readableJSON["city"].count
         
         for i in 0...numberOfRows {
             var city = "city"
