@@ -4,5 +4,5 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'Moonbeam' do
-  pod 'SwiftyJSON'
+  pod 'SwiftyJSON', '~> 2.3'
 end

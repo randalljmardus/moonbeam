@@ -28,24 +28,28 @@ class indexViewController: UITableViewController {
         let path : String = NSBundle.mainBundle().pathForResource("buffalo", ofType: "json") as String!
         let jsonData = NSData(contentsOfFile: path) as NSData!
         //when you decide to pull from the VA url, change contentsOfFile: path to contentsOfFile: insertVAURLhere)
-        let readableJSON = JSON(data: jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
         
-        var city = readableJSON["City"]["Entry1"]["city_slug"]
+        if let json = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions()) as? [String:AnyObject]
+            {
+                print(json)
+    }
+    
+//        let readableJSON = JSON(data: jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
+//        
+//        var city = readableJSON["city"]
         
-        numberOfRows = readableJSON["City"].count
+ //       numberOfRows = readableJSON["City"].count
         
-        for i in 0...numberOfRows {
-            var city = "City"
-            city += "\(i)"
-            var citySlug = readableJSON["City"]["Entry1"]["city_slug"].string as String!
-            var value = readableJSON["City"]["Entry1"]["values"].string as String!
-            
-            citiesArray.append("city_slug")
-            valuesArray.append("values")
-        }
-        
-        NSLog("\(city)")
-        
+//        for i in 0...numberOfRows {
+//            var city = "city"
+//            city += "\(i)"
+//            var citySlug = readableJSON["city"]["city_slug"].string as String!
+//            var value = readableJSON["City"]["values"].string as String!
+//            
+//            citiesArray.append("city_slug")
+//            valuesArray.append("values")
+//        }
+                
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
