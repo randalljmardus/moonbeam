@@ -1,7 +1,7 @@
 {
     "city" : [
         {
-            "city_slug": "buffalo",
+              "city_slug": "buffalo",
               "field_type_name": "Average Processing Time",
               "region_slug": "eastern",
               "value": "296.6",
