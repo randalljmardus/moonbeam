@@ -62,7 +62,7 @@ class indexViewController: UITableViewController {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
         if citiesArray.count != 0 {
-            cell.textLabel?.text = citiesArray[indexPath.row]
+            cell.textLabel?.text = citiesArray[indexPath.row] + " " + valuesArray[indexPath.row]
         }
         
         return cell
