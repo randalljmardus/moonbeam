@@ -27,26 +27,34 @@ class indexViewController: UITableViewController {
         
         let path : String = NSBundle.mainBundle().pathForResource("buffalo", ofType: "json") as String!
         let jsonData = NSData(contentsOfFile: path) as NSData!
-        //when you decide to pull from the VA url, change contentsOfFile: path to contentsOfFile: insertVAURLhere)
+        //when you can pull from the VA url, change contentsOfFile: path to contentsOfFile: insertVAURLhere)
         
         if let json = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions()) as? [String:AnyObject]
             {
             print(json)
-    }
+            }
     
-       let readableJSON = JSON(data: jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
+        let readableJSON = JSON(data: jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
         
-        var city = readableJSON["city"]["city_slug"]["value"]
+//       var city = readableJSON["city"]["city_slug"]["value"]
+//        I think the problem is that my json file has an array in it and that the video does not so when it comes time to call I'm not set up to call from an array. How do I call from an array in a json file? Go back to the SwiftyJSON documentation and see how they did it.
         
-        for i in 0...numberOfRows {
-            var city = "city"
-            city += "\(i)"
-            var citySlug = readableJSON["city"]["city_slug"].string as String!
-            var value = readableJSON["city"]["value"].string as String!
-        
-            citiesArray.append("city_slug")
-            valuesArray.append("value")
+        var cityArray = readableJSON["city"]
+        for i in 0...cityArray.count-1 {
+//            var city = "city"
+//            city += "\(i)"
+//            
+//            let citySlug = readableJSON["city"][0]["city_slug"].string as String!
+//            let value = readableJSON[0]["value"].string as String!
+//        
+//            citiesArray.append(citySlug)
+//            valuesArray.append(value)
+            //when I append ("city_slug") it prints "city_slug" to the app, but when I try to pass citySlug or value constants it crashes and says it is nil which means lines 46/47 are not pulling from the json file the way that line 32 does.
+            print(cityArray[i]["city_slug"])
+
         }
+        
+  //      NSLog("\(city)")
                 
     }
     
