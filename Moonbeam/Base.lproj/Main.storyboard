@@ -29,90 +29,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="mWJ-dw-IhR">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mWJ-dw-IhR" id="p18-uj-zfr">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="4Hy-QT-tjX" id="t2z-so-Q3j"/>
                             <outlet property="delegate" destination="4Hy-QT-tjX" id="Yq3-vQ-kJj"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="DE8-88-Mwn"/>
-                    <connections>
-                        <segue destination="tT1-rt-OZR" kind="presentation" id="otk-Gw-SWb"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4D-mC-qNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="580"/>
-        </scene>
-        <!--Map View Controller-->
-        <scene sceneID="ZYW-2L-sFT">
-            <objects>
-                <viewController storyboardIdentifier="mapViewController" id="tT1-rt-OZR" userLabel="Map View Controller" customClass="mapViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dg3-WP-Bmf"/>
-                        <viewControllerLayoutGuide type="bottom" id="3W8-eh-oAg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2D7-BN-H2X">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0eK-HU-tGF">
-                                <rect key="frame" x="180" y="72" width="240" height="128"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Map of Selected VA Facility" id="Kzs-tj-Nlk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="af5-wB-s8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1534" y="532"/>
-        </scene>
-        <!--Map Nav Controller-->
-        <scene sceneID="dYc-cl-HYw">
-            <objects>
-                <navigationController storyboardIdentifier="mapNavController" id="Uk4-o4-sT9" customClass="mapNavController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gnY-lq-OUW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="tT1-rt-OZR" kind="relationship" relationship="rootViewController" id="MsC-Xr-9hU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yu3-cv-b2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1534" y="-261"/>
-        </scene>
-        <!--Search Nav Controller-->
-        <scene sceneID="vNW-Co-akE">
-            <objects>
-                <navigationController storyboardIdentifier="searchNavController" id="6hK-Nd-CXN" customClass="searchNavController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gFA-FA-c3B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="wB0-eo-CBe" kind="relationship" relationship="rootViewController" id="aii-Wv-mAE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U15-q5-Uf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-436" y="-250"/>
+            <point key="canvasLocation" x="554" y="688"/>
         </scene>
         <!--Search ViewController-->
         <scene sceneID="PnJ-qo-aJ9">
             <objects>
-                <viewController storyboardIdentifier="searchViewController" id="wB0-eo-CBe" userLabel="Search ViewController" customClass="searchViewController" customModule="Moonbeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchViewController" title="Search ViewController" id="wB0-eo-CBe" userLabel="Search ViewController" customClass="searchViewController" customModule="Moonbeam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nuq-od-on5"/>
                         <viewControllerLayoutGuide type="bottom" id="9NL-g4-XvS"/>
@@ -145,25 +76,47 @@
                                 <rect key="frame" x="214" y="489" width="173" height="30"/>
                                 <state key="normal" title="Find Nearest VA Facilities"/>
                                 <connections>
-                                    <segue destination="4Hy-QT-tjX" kind="presentation" id="6ps-cs-b3P"/>
+                                    <segue destination="4Hy-QT-tjX" kind="show" id="rm0-3P-0ZS"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSn-v2-ct1">
+                                <rect key="frame" x="214" y="489" width="173" height="30"/>
+                                <state key="normal" title="Find Nearest VA Facilities"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="VA Facility Search" id="KQf-Vo-xaN"/>
                     <connections>
+                        <outlet property="searchButton" destination="gSn-v2-ct1" id="aV7-3x-xR3"/>
                         <outlet property="searchCityLabel" destination="ZSd-1V-TGa" id="kEB-hf-dFD"/>
                         <outlet property="searchPicker" destination="4Dt-fQ-JaL" id="0BJ-tC-siC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NWk-PG-bSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-422" y="488"/>
+            <point key="canvasLocation" x="-386" y="674"/>
+        </scene>
+        <!--Search Navigation Controller-->
+        <scene sceneID="g4I-Ww-aIT">
+            <objects>
+                <navigationController title="Search Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="t0p-w0-eFV" userLabel="Search Navigation Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="269-rs-Aky">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wB0-eo-CBe" kind="relationship" relationship="rootViewController" id="tb1-S3-SXg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJb-io-68M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="-256"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="otk-Gw-SWb"/>
-        <segue reference="6ps-cs-b3P"/>
+        <segue reference="rm0-3P-0ZS"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -46,4 +46,13 @@ class searchViewController:UIViewController, UIPickerViewDataSource, UIPickerVie
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         searchCityLabel.text = pickerData[row]
     }
+    
+    @IBOutlet weak var searchButton: UIButton!
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destViewController : indexViewController = segue.destinationViewController as! indexViewController
+        
+//        destViewController = searchButton
+    }
 }
