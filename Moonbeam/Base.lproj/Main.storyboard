@@ -29,6 +29,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="3AT-k3-2fd">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3AT-k3-2fd" id="5TJ-cI-x2r">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="4Hy-QT-tjX" id="t2z-so-Q3j"/>
                             <outlet property="delegate" destination="4Hy-QT-tjX" id="Yq3-vQ-kJj"/>
@@ -72,30 +82,26 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Dt-fQ-JaL">
                                 <rect key="frame" x="0.0" y="225" width="600" height="216"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rK-LB-orY">
-                                <rect key="frame" x="214" y="489" width="173" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJi-kL-eBY">
+                                <rect key="frame" x="214" y="481" width="173" height="30"/>
                                 <state key="normal" title="Find Nearest VA Facilities"/>
                                 <connections>
-                                    <segue destination="4Hy-QT-tjX" kind="show" id="rm0-3P-0ZS"/>
+                                    <segue destination="4Hy-QT-tjX" kind="show" id="LI9-rS-BUw"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSn-v2-ct1">
-                                <rect key="frame" x="214" y="489" width="173" height="30"/>
-                                <state key="normal" title="Find Nearest VA Facilities"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="VA Facility Search" id="KQf-Vo-xaN"/>
                     <connections>
-                        <outlet property="searchButton" destination="gSn-v2-ct1" id="aV7-3x-xR3"/>
+                        <outlet property="findNearestVAFacility" destination="OJi-kL-eBY" id="cRt-8R-fKb"/>
                         <outlet property="searchCityLabel" destination="ZSd-1V-TGa" id="kEB-hf-dFD"/>
                         <outlet property="searchPicker" destination="4Dt-fQ-JaL" id="0BJ-tC-siC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NWk-PG-bSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="674"/>
+            <point key="canvasLocation" x="-310" y="688"/>
         </scene>
         <!--Search Navigation Controller-->
         <scene sceneID="g4I-Ww-aIT">
@@ -117,6 +123,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rm0-3P-0ZS"/>
+        <segue reference="LI9-rS-BUw"/>
     </inferredMetricsTieBreakers>
 </document>
